@@ -1,1 +1,6 @@
 @use '../mixins/adaptive-font' as *;
+
+.header {
+	padding: 33px 0;
+	background-color: var(--asparagus-color);
+}

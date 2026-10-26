@@ -18,8 +18,7 @@ body {
 	font-family: 'BellotaText', sans-serif;
 	font-weight: 400;
 	@include adaptive-font(36, 16);
-	color: var(--black-color);
-	background-color: var(--light-color);
+	color: var(--light-color);
 }
 
 .container {

@@ -1,1 +1,23 @@
 @use 'mixins/adaptive-font' as *;
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 55px;
+
+	&__item {
+		line-height: 0;
+	}
+
+	&__link {
+		font-family: 'BalsamiqSans', sans-serif;
+		font-weight: 700;
+		text-align: center;
+		transition: color 0.4s;
+
+		&:hover {
+			color: var(--orange-color);
+		}
+	}
+}
