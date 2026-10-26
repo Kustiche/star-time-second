@@ -15,9 +15,9 @@ html {
 
 body {
 	height: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'BellotaText', sans-serif;
 	font-weight: 400;
-	@include adaptive-font(22, 16);
+	@include adaptive-font(36, 16);
 	color: var(--black-color);
 	background-color: var(--light-color);
 }
