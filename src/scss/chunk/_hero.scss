@@ -1,1 +1,17 @@
 @use '../mixins/adaptive-font' as *;
+
+.hero {
+	position: relative;
+	padding-top: 120px;
+	padding-bottom: 645px;
+	background-color: #c0955b;
+
+	&__background {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		max-width: 1348px;
+		width: 100%;
+		transform: translateX(-50%);
+	}
+}

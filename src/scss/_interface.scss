@@ -12,12 +12,29 @@
 
 	&__link {
 		font-family: 'BalsamiqSans', sans-serif;
-		font-weight: 700;
 		text-align: center;
 		transition: color 0.4s;
 
 		&:hover {
 			color: var(--orange-color);
 		}
+	}
+}
+
+.section {
+	padding: 385px 0;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 90px;
+		font-family: 'BalsamiqSans', sans-serif;
+		@include adaptive-font(64, 28);
+		text-align: center;
+	}
+
+	&__text {
+		margin: 0;
+		@include adaptive-font(40, 18);
+		text-align: center;
 	}
 }
