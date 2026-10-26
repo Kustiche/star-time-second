@@ -1,0 +1,13 @@
+@use '../vars' as *;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$widthDiff: $container-width - $mobile-width;
+	$slope: calc($addSize / $widthDiff) * 100;
+
+	font-size: #{$pcSize}px;
+
+	@media (max-width: #{$container-width}px) {
+		font-size: clamp(#{$mobSize}px, calc(#{$mobSize}px + #{$slope} * (100vw - #{$mobile-width}px) / 100), #{$pcSize}px);
+	}
+}
