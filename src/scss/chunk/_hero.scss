@@ -1,22 +1,33 @@
 @use '../mixins/adaptive-font' as *;
 
 .hero {
-	position: relative;
 	padding-top: 120px;
-	padding-bottom: 645px;
+	padding-bottom: 0;
 	background-color: #c0955b;
 
-	&::before {
-		position: absolute;
-		content: '';
-		bottom: 0;
-		left: 50%;
+	@media (max-width: 992px) {
+		padding-top: 60px;
+	}
+
+	&__content {
+		margin-bottom: 210px;
+
+		@media (max-width: 1200px) {
+			margin-bottom: 110px;
+		}
+
+		@media (max-width: 992px) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__decoration {
+		margin: 0 auto;
 		width: min(100%, 1348px);
 		aspect-ratio: 1348 / 437;
 		background-image: url('../../resources/img/earth.webp');
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		background-position: center;
-		transform: translateX(-50%);
 	}
 }
