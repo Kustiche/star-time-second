@@ -38,7 +38,8 @@
 .content {
 	display: flex;
 	flex-direction: column;
-	width: 62vw;
+	margin: 0 auto;
+	width: 64vw;
 	gap: 90px;
 
 	@media (max-width: 992px) {
@@ -47,6 +48,10 @@
 
 	&--ta-center {
 		text-align: center;
+	}
+
+	&--ta-right {
+		text-align: right;
 	}
 
 	&__title {
