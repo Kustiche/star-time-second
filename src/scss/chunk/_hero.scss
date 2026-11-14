@@ -1,8 +1,9 @@
 @use '../mixins/adaptive-font' as *;
 
 .hero {
+	position: relative;
 	padding-top: 120px;
-	padding-bottom: 0;
+	padding-bottom: 437px;
 	background-color: #c0955b;
 
 	@media (max-width: 992px) {
@@ -22,12 +23,21 @@
 	}
 
 	&__decoration {
+		position: absolute;
+		bottom: -911px;
+		left: 50%;
 		margin: 0 auto;
 		width: min(100%, 1348px);
-		aspect-ratio: 1348 / 437;
+		aspect-ratio: 1348 / 1348;
+		opacity: 0.5;
+		transform: rotate(0deg) translateX(-50%);
 		background-image: url('../../resources/img/earth.webp');
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: cover;
 		background-position: center;
+		animation-name: circling;
+		animation-duration: 100s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 	}
 }

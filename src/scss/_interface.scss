@@ -23,6 +23,15 @@
 
 .section {
 	padding: 385px 0;
+	background-color: var(--bismark-color);
+
+	@media (max-width: 992px) {
+		padding: 140px 0;
+	}
+
+	@media (max-width: 768px) {
+		padding: 70px 0;
+	}
 }
 
 .content {

@@ -1,0 +1,24 @@
+.moon {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 50%;
+		right: 0;
+		width: 16vw;
+		aspect-ratio: 305 / 941;
+		background-image: url('../../resources/img/moon.webp');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: center;
+		transform: translateY(-50%);
+	}
+
+	&__content {
+		@media (max-width: 1790px) {
+			max-width: 70vw;
+			width: 100%;
+		}
+	}
+}

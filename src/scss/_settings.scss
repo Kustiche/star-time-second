@@ -1,6 +1,15 @@
 @use 'vars' as *;
 @use 'mixins/adaptive-font' as *;
 
+@keyframes circling {
+	0% {
+		transform: translate(-50%) rotate(0);
+	}
+	100% {
+		transform: translate(-50%) rotate(360deg);
+	}
+}
+
 html {
 	height: 100%;
 	box-sizing: border-box;
