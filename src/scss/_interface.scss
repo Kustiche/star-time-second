@@ -65,3 +65,10 @@
 		@include adaptive-font(40, 18);
 	}
 }
+
+.title {
+	margin: 0;
+	font-family: 'BalsamiqSans', sans-serif;
+	@include adaptive-font(48, 24);
+	text-align: center;
+}

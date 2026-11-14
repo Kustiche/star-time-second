@@ -1,0 +1,62 @@
+.solar-system {
+	padding: 120px 0;
+	background-color: var(--bismark-color);
+
+	@media (max-width: 768px) {
+		padding: 60px 0;
+	}
+
+	&__title {
+		margin-bottom: 90px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 45px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 170px;
+		gap: 20px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 85px;
+		}
+
+		@media (max-width: 576px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__planets {
+		padding-left: 57px;
+	}
+
+	&__planets-item {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: -29px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: var(--light-color);
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__img {
+		width: 29vw;
+	}
+
+	&__text {
+		margin: 0;
+		text-align: center;
+		color: var(--orange-color);
+	}
+}
