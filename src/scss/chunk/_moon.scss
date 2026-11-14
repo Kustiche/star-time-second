@@ -1,6 +1,5 @@
 .moon {
 	position: relative;
-	overflow: hidden;
 
 	&::before {
 		position: absolute;
@@ -19,12 +18,5 @@
 		animation-duration: 100s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
-	}
-
-	&__content {
-		@media (max-width: 1790px) {
-			max-width: 70vw;
-			width: 100%;
-		}
 	}
 }
