@@ -1,1 +1,47 @@
-@use '../mixins/adaptive-font' as *;
+.footer {
+	padding-bottom: 130px;
+
+	@media (max-width: 768px) {
+		padding-bottom: 65px;
+	}
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 90px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 45px;
+		}
+
+		@media (max-width: 576px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		text-align: center;
+
+		&--orange {
+			color: var(--orange-color);
+		}
+
+		&--underline {
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: '';
+				bottom: -6px;
+				left: 0;
+				width: 100%;
+				border-top: 2px solid var(--orange-color);
+			}
+		}
+	}
+}
