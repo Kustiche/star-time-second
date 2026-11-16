@@ -1,11 +1,4 @@
 .solar-system {
-	padding: 120px 0;
-	background-color: var(--bismark-color);
-
-	@media (max-width: 768px) {
-		padding: 60px 0;
-	}
-
 	&__title {
 		margin-bottom: 90px;
 

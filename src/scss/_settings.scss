@@ -37,6 +37,7 @@ body {
 	font-weight: 400;
 	@include adaptive-font(36, 16);
 	color: var(--light-color);
+	background-color: var(--bismark-color);
 }
 
 .container {
