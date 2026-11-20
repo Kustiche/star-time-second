@@ -5,11 +5,13 @@
 @use 'settings';
 @use 'interface';
 
-@use 'chunk/header';
-@use 'chunk/hero';
-@use 'chunk/moon';
-@use 'chunk/sone';
-@use 'chunk/mars';
-@use 'chunk/solar-system';
-@use 'chunk/photos';
-@use 'chunk/footer';
+@use 'chunk/index/header';
+@use 'chunk/index/hero';
+@use 'chunk/index/moon';
+@use 'chunk/index/sone';
+@use 'chunk/index/mars';
+@use 'chunk/index/solar-system';
+@use 'chunk/index/photos';
+@use 'chunk/index/footer';
+
+@use 'chunk/about/about';
