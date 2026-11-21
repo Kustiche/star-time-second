@@ -5,6 +5,10 @@
 		padding-bottom: 65px;
 	}
 
+	&__container {
+		max-width: 1210px;
+	}
+
 	&__wrap {
 		display: flex;
 		flex-direction: column;
